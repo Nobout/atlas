@@ -1,0 +1,108 @@
+:root {
+  /* Backgrounds & Surfaces */
+  --bg-global: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-muted: #F1F5F9;
+  --border-surface: #E2E8F0;
+  --border-strong: #CBD5E1;
+
+  /* Text */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+
+  /* Interactive Accents */
+  --accent: #0088CC;
+  --accent-hover: #0B4F71;
+  --accent-soft: #E0F2FE;
+  --accent-text: #FFFFFF;
+
+  /* Status */
+  --success: #059669;
+  --success-bg: #ECFDF5;
+  --success-border: #A7F3D0;
+  --danger: #E11D48;
+  --danger-bg: #FFF1F2;
+  --danger-border: #FECDD3;
+  --warning-bg: #FEF3C7;
+  --warning-text: #B45309;
+
+  /* SVG Map Tokens */
+  --map-ocean: #F8FAFC;
+  --map-neutral: #E2E8F0;
+  --map-neutral-hover: #CBD5E1;
+  --map-context: #F1F5F9;
+  --map-stroke: #FFFFFF;
+  --map-missed: #FDA4AF;
+  --map-missed-text: #9F1239;
+  --map-inset-border: #CBD5E1;
+  --map-inset-bg: #F8FAFC;
+
+  /* Validated Territory Palette (Blues & Cyans) */
+  --palette-0: #0B4F71;
+  --palette-1: #0088CC;
+  --palette-2: #00B4D8;
+  --palette-3: #4A7C9B;
+  --palette-4: #68BBE3;
+
+  /* Shadows & Radii */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 12px 28px rgba(15, 23, 42, 0.12);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+}
+
+[data-theme='dark'] {
+  /* Backgrounds & Surfaces */
+  --bg-global: #0B1120;
+  --bg-surface: #111827;
+  --bg-surface-muted: #1E293B;
+  --border-surface: #1E293B;
+  --border-strong: #334155;
+
+  /* Text */
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+
+  /* Interactive Accents */
+  --accent: #38BDF8;
+  --accent-hover: #7DD3FC;
+  --accent-soft: rgba(56, 189, 248, 0.15);
+  --accent-text: #0B1120;
+
+  /* Status */
+  --success: #34D399;
+  --success-bg: rgba(16, 185, 129, 0.12);
+  --success-border: rgba(52, 211, 153, 0.35);
+  --danger: #FB7185;
+  --danger-bg: rgba(244, 63, 94, 0.12);
+  --danger-border: rgba(251, 113, 133, 0.35);
+  --warning-bg: rgba(245, 158, 11, 0.15);
+  --warning-text: #FBBF24;
+
+  /* SVG Map Tokens */
+  --map-ocean: #0B1120;
+  --map-neutral: #1E293B;
+  --map-neutral-hover: #334155;
+  --map-context: #131C31;
+  --map-stroke: #0B1120;
+  --map-missed: #9F1239;
+  --map-missed-text: #FDA4AF;
+  --map-inset-border: #334155;
+  --map-inset-bg: #0F172A;
+
+  /* Validated Territory Palette (Luminous Dark-Mode Blues & Cyans) */
+  --palette-0: #0284C7;
+  --palette-1: #0EA5E9;
+  --palette-2: #38BDF8;
+  --palette-3: #22D3EE;
+  --palette-4: #7DD3FC;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.45);
+}

@@ -1,0 +1,286 @@
+.page {
+  padding-bottom: 3rem;
+}
+
+.controlBar {
+  position: sticky;
+  top: 57px;
+  z-index: 30;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.controlBarInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+}
+
+.leftMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: var(--bg-surface-muted);
+  border: 1px solid var(--border-surface);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.backButton:hover {
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.quizTitle {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.inputGroup {
+  flex: 1 1 260px;
+  max-width: 440px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.answerInput {
+  width: 100%;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  background-color: var(--bg-global);
+  border: 2px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.answerInput:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.answerInput:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.feedbackPill {
+  position: absolute;
+  right: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-full);
+  pointer-events: none;
+  animation: fadeSlide 0.15s ease;
+}
+
+.feedbackFound {
+  background-color: var(--success-bg);
+  color: var(--success);
+  border: 1px solid var(--success-border);
+}
+
+.feedbackDuplicate {
+  background-color: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.statsGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.scoreBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.4rem 0.75rem;
+  background-color: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+}
+
+.scoreSlash {
+  opacity: 0.65;
+}
+
+.timerGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.timerModeSwitch {
+  display: inline-flex;
+  background-color: var(--bg-surface-muted);
+  border: 1px solid var(--border-surface);
+  border-radius: var(--radius-sm);
+  padding: 0.15rem;
+}
+
+.modeBtn {
+  background: none;
+  border: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modeActive {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.timerDisplay {
+  min-width: 58px;
+  text-align: center;
+  padding: 0.4rem 0.65rem;
+  background-color: var(--bg-surface-muted);
+  border: 1px solid var(--border-surface);
+  border-radius: var(--radius-md);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.timerUrgent {
+  color: var(--danger);
+  border-color: var(--danger-border);
+  background-color: var(--danger-bg);
+}
+
+.giveUpButton {
+  padding: 0.45rem 0.85rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--danger);
+  background-color: var(--danger-bg);
+  border: 1px solid var(--danger-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.giveUpButton:hover {
+  opacity: 0.85;
+}
+
+.playAgainButton {
+  padding: 0.48rem 0.95rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--accent-text);
+  background-color: var(--accent);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.playAgainButton:hover {
+  opacity: 0.9;
+}
+
+.workspace {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.resultBanner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-lg);
+}
+
+.bannerSuccess {
+  background-color: var(--success-bg);
+  border: 1px solid var(--success-border);
+  color: var(--success);
+}
+
+.bannerEnded {
+  background-color: var(--danger-bg);
+  border: 1px solid var(--danger-border);
+  color: var(--danger);
+}
+
+.bannerTitle {
+  font-size: 1.0625rem;
+  font-weight: 800;
+}
+
+.bannerSubtitle {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 768px) {
+  .controlBar {
+    top: 52px;
+  }
+
+  .controlBarInner {
+    padding: 0.65rem 1rem;
+  }
+
+  .workspace {
+    padding: 1rem 1rem 0;
+  }
+
+  .timerModeSwitch {
+    display: none;
+  }
+}
